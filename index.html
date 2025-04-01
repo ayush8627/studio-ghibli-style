@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli Art Transform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ghibli Art Transform</h1>
+            <p>Transform your photos into magical Ghibli-style artwork</p>
+        </header>
+
+        <main>
+            <div class="upload-container">
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <div class="upload-content">
+                        <svg class="upload-icon" viewBox="0 0 24 24">
+                            <path d="M9 16h6v-6h4l-7-7-7 7h4v6zm-4 2h14v2H5v-2z"/>
+                        </svg>
+                        <p>Tap to upload or drag image here</p>
+                        <span class="file-info">Supports: JPG, PNG</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-container">
+                <div class="preview-box">
+                    <h3>Original</h3>
+                    <div class="image-preview" id="originalPreview"></div>
+                </div>
+                <div class="preview-box">
+                    <h3>Ghibli Style</h3>
+                    <div class="image-preview" id="convertedPreview">
+                        <div class="loading-spinner hidden" id="loadingSpinner">
+                            <div class="spinner"></div>
+                            <span>Converting...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button id="convertBtn" class="primary-btn" disabled>Transform to Ghibli Style</button>
+                <button id="downloadBtn" class="secondary-btn" disabled>Download</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created with 💫 for Ghibli fans</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
