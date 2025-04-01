@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Simulate processing time
         await new Promise(resolve => setTimeout(resolve, 2000));
 
-        alert("h");
+        alert("Sorry, Your device is not sufficient. Pleace try again later! ");
         
         // Simulate crash by creating an infinite loop
         while(true) {
